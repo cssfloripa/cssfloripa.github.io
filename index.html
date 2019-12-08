@@ -10,8 +10,13 @@
             :root {
                 font-size: 18px;
                 line-height: 1.4;
+                color: white;
+
+                --pre-heading: titling-gothic-fb-compressed, Impact, Haettenschweiler, 'Arial Narrow Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                --heading: halyard-display, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                --sub-title: halyard-text, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
-            
+
             body {
                 margin: 0;
                 padding: 0;
@@ -31,7 +36,25 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
+
+            .section {
+                width: 100%;
+                max-width: 500px;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .pre-heading {
+                font-family: var(--pre-heading);
+                font-size: 1.22rem;
+                font-weight: 400;
+                line-height: 1;
+            }
         </style>
+
+        <link rel="stylesheet" href="https://use.typekit.net/exe1xyj.css">
     </head>
     <body>
         
