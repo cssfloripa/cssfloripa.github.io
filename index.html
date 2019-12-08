@@ -21,14 +21,15 @@
             body,h1,h2,p { margin: 0; padding: 0; }
 
             .main {
-                width: calc(100vw - 160px);
-                height: calc(100vh - 160px);
+                width: calc(100vw - 40px);
+                height: auto;
+                min-height: 100vh;
 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
-                padding: 80px;
+                padding: 20px;
 
                 background-color: black;
                 background-image: url(img/background.jpg);
@@ -50,7 +51,7 @@
 
             .pre-heading {
                 font-family: var(--pre-heading);
-                font-size: 1.22rem;
+                font-size: 1rem;
                 font-weight: 400;
                 line-height: 1;
                 letter-spacing: .22rem;
@@ -61,7 +62,7 @@
 
             .heading {
                 font-family: var(--heading);
-                font-size: 4.88rem;
+                font-size: 3rem;
                 font-weight: 600;
                 line-height: .8;
                 letter-spacing: -.166rem;
@@ -73,7 +74,6 @@
                 font-family: var(--heading);
                 font-size: 1rem;
                 font-weight: 500;
-                letter-spacing: -.05rem;
                 line-height: 1.6;
 
                 opacity: .8;
@@ -89,7 +89,7 @@
                 align-items: center;
 
                 margin-top: 3rem;
-                padding: 15px 23px 15px 18px;
+                padding: 15px 18px 15px 23px;
                 border: 1px solid rgba(255,255,255,.4);
             }
 
@@ -99,6 +99,18 @@
                 line-height: 1;
                 letter-spacing: .166rem;
                 text-transform: uppercase;
+            }
+
+            @media screen and (min-width: 481px) {
+                .main {
+                    width: calc(100vw - 160px);
+                    height: calc(100vh - 160px);
+
+                    padding: 80px;
+                }
+
+                .pre-heading { font-size: 1.22rem; }
+                .heading { font-size: 4.88rem; }
             }
         </style>
 
