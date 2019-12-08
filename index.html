@@ -21,7 +21,7 @@
             body,h1,h2,p { margin: 0; padding: 0; }
 
             .main {
-                width: calc(100vw - 40px);
+                width: 100%;
                 height: auto;
                 min-height: 100vh;
 
@@ -29,7 +29,7 @@
                 flex-direction: column;
                 align-items: center;
 
-                padding: 20px;
+                padding: 20px 0;
 
                 background-color: black;
                 background-image: url(img/background.jpg);
@@ -40,13 +40,14 @@
 
             .section {
                 width: 100%;
-                max-width: 500px;
+                max-width: 300px;
 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
 
                 margin-top: 10vh;
+                padding: 0 20px;
             }
 
             .pre-heading {
@@ -108,6 +109,7 @@
 
                     padding: 80px;
                 }
+                .section { max-width: 500px; }
 
                 .pre-heading { font-size: 1.22rem; }
                 .heading { font-size: 4.88rem; }
